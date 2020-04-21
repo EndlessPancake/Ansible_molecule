@@ -1,0 +1,15 @@
+#DEBUG = True
+TORNADO_DB = '/var/db/nado.db'
+TORNADOCTL_PASSWD = '{{ tornado.tornadoctl_passwd }}'
+RUNNING_ENV = '{{ tornado.running_env }}'    
+##
+# Mail
+##
+#MAIL_HOST = 'localhost'
+# Office
+#MAIL_HOST = 'smtp.YYYi.jp'
+MAIL_HOST = {{ tornado.mail_host }}        # Disable
+
+## for pc-nadoctl*
+MAIL_TO = ['{{ tornado.mail_to }}']
+MAIL_FROM = '{{ tornado.mail_from }}'
